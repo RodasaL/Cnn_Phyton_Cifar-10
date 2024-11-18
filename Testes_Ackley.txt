@@ -1,0 +1,33 @@
+
+
+Explicação Rápida do PSO
+Particle Swarm Optimization (PSO) é um algoritmo de otimização inspirado no comportamento de enxames, como bandos de pássaros ou cardumes de peixes. No PSO:
+
+Partículas: Cada solução potencial é representada por uma "partícula" que se move pelo espaço de busca.
+Movimento: Cada partícula tem uma posição e uma velocidade que são atualizadas a cada iteração com base em:
+Inércia: Mantém parte da velocidade anterior.
+Componente Cognitivo: Atração em direção à melhor posição que a partícula encontrou.
+Componente Social: Atração em direção à melhor posição encontrada pelo enxame inteiro.
+Objetivo: Minimizar (ou maximizar) uma função objetivo. As partículas ajustam suas posições para explorar o espaço e encontrar a melhor solução.
+Testes Relevantes para Comparação
+Vamos realizar 5 testes com parâmetros variados para observar a sensibilidade de cada algoritmo.
+
+Testes para PSO
+Teste 1: População: 10, Iterações: 50, Inércia: 0.5, Coeficientes: 1.5 (Cognitivo), 1.5 (Social) R:[ 1.16710282e-06 -5.62383201e-06], Value: 1.6246398566455156e-05
+
+Teste 2: População: 20, Iterações: 100, Inércia: 0.3, Coeficientes: 2.0 (Cognitivo), 2.0 (Social) R:[-1.85903605e-14 -7.67194141e-15], Value: 5.728750807065808e-14
+
+Teste 3: População: 30, Iterações: 150, Inércia: 0.8, Coeficientes: 2.5 (Cognitivo), 2.0 (Social) 
+R:[1.68751332e-04 8.91988120e-05], Value: 0.0005408474837165222
+Teste 4: População: 40, Iterações: 200, Inércia: 0.4, Coeficientes: 2.0 (Cognitivo), 1.5 (Social) 
+R:[-9.87263335e-17 -1.85403262e-16], Value: 4.440892098500626e-16
+Teste 5: População: 50, Iterações: 250, Inércia: 0.6, Coeficientes: 1.8 (Cognitivo), 2.2 (Social) 
+R:[-1.31209002e-15 -1.01414530e-15], Value: 3.9968028886505635e-15
+
+
+Testes para GWO
+Teste 1: Lobos: 5, Iterações: 50 R:[-0.0005656230773563002, -0.0004755546056562468], Value: 0.002104673550566094
+Teste 2: Lobos: 10, Iterações: 100 R:[7.1899738673406e-14, 9.512551159340762e-14], Value: 3.3795188869589765e-13
+Teste 3: Lobos: 15, Iterações: 150 R:[-1.9461496550603423e-15, -2.307611585759862e-16], Value: 3.9968028886505635e-15
+Teste 4: Lobos: 20, Iterações: 200 R:[-3.9160226839401866e-16, 1.585237396681852e-17], Value: 4.440892098500626e-16
+Teste 5: Lobos: 30, Iterações: 250 R:[-3.924662988796212e-16, -5.804059982312798e-18], Value: 4.440892098500626e-16
